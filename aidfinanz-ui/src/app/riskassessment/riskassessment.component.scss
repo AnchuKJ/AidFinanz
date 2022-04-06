@@ -1,0 +1,53 @@
+.riskmain{
+    text-align: left;
+    .title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+    .detail{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        color: #6F6C90;
+        margin-left: 50px;
+    }
+
+    .componentdiv{
+        margin: 20px 20px;
+        .subtitle{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #514F6E;
+        }
+        .bartitle{
+            margin-left: 60px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 15px;
+            color: #6F6C90;
+            span{
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+::ng-deep.progress_1{
+    height: 22px !important;
+    border-radius: 20px;
+    margin-bottom: -15px !important;
+}
+::ng-deep.progress{
+    height: 22px !important;
+    border-radius: 20px;
+    margin-bottom: -22px !important;
+}
+::ng-deep.display_{
+    padding: 0px !important;
+    margin:3px 50px 50px 50px !important;
+}

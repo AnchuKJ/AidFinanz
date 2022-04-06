@@ -1,0 +1,34 @@
+.header{
+    .logodiv{
+        img{
+            margin-left: 10px;
+        }
+       span{
+            font-size: 50px;
+            position: relative;
+            top: -35px;     
+            opacity: .7;    
+       }
+    }
+    .currentuserdiv{
+        margin: auto;
+        span{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            position: relative;
+            top: -20px;
+            left: 10px;
+        }
+    }
+    .logoutdiv{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        margin: auto;
+    }
+}
+.main{
+    background: linear-gradient(90deg, rgba(5, 45, 186, 0.608) 14.42%, rgba(0, 224, 255, 0.6) 105.52%);
+    height: 100%;
+}

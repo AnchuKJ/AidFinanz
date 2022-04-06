@@ -1,0 +1,130 @@
+<div class="applicantmain">
+    <div class="title">Applicant Details</div>
+    <div class="detail">Lorem ipsum dolor sit amet consectetur adipisc.</div>
+    <div fxLayout="row" class="componentdiv">
+        <div fxFlex="50" class="firstcol">
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext">Title</div>
+                <div fxFlex="20" class="fieldbox">                  
+                    <mat-select appearance="outline">
+                        <mat-option>Mrs</mat-option>
+                        <mat-option>Mr</mat-option>
+                        <mat-option>Miss</mat-option>
+                    </mat-select>
+                </div>
+            </div>
+            <div fxLayout="row" class="margin">
+                <div  fxFlex="40" class="titletext">DOB</div>
+                <div fxFlex="40" class="fieldbox">                  
+                    <mat-form-field appearance="outline">
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext nopadding">Educational Qualification</div>
+                <div fxFlex="53" class="fieldbox">                  
+                    <mat-select appearance="outline" panelClass="selectpanelclass">
+                        <mat-option>Illitrate</mat-option>
+                    </mat-select>
+                </div>
+            </div>
+            <div fxLayout="row" class="margin">
+                <div  fxFlex="40" class="titletext">Address Line 1</div>
+                <div fxFlex="55" class="fieldbox">                  
+                    <mat-form-field  appearance="outline">                       
+                        <input matInput>
+                      </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext">Pincode</div>
+                <div fxFlex="55" class="fieldbox">                  
+                    <mat-form-field  appearance="outline">                       
+                        <input matInput>
+                      </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext">Country</div>
+                <div fxFlex="53" class="fieldbox">                  
+                    <mat-select appearance="outline">
+                        <mat-option>India</mat-option>
+                    </mat-select>
+                </div>
+            </div>
+            <div fxLayout="row" class="margin">
+                <div  fxFlex="40" class="titletext">Loan Purpose</div>
+                <div fxFlex="55" class="fieldbox">                  
+                    <mat-form-field  appearance="outline">                       
+                        <textarea matInput></textarea>
+                      </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div fxFlex="50" class="secondcol">
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext">Name</div>
+                <div fxFlex="55" class="fieldbox">                  
+                    <mat-form-field  appearance="outline">                       
+                        <input matInput>
+                      </mat-form-field>
+                </div>
+            </div>
+        
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext">Mobile No.</div>
+                <div fxFlex="55" class="fieldbox">                  
+                    <mat-form-field  appearance="outline">                       
+                        <input matInput>
+                      </mat-form-field>
+                </div>
+            </div>
+       
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext">Source of income</div>
+                <div fxFlex="53" class="fieldbox">                  
+                    <mat-select appearance="outline">
+                        <mat-option>Salaried</mat-option>
+                    </mat-select>
+                </div>
+            </div>
+       
+            <div fxLayout="row" class="margin">
+                <div  fxFlex="40" class="titletext">Addres Line 2</div>
+                <div fxFlex="55" class="fieldbox">                  
+                    <mat-form-field  appearance="outline">                       
+                        <input matInput>
+                      </mat-form-field>
+                </div>
+            </div>
+       
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext">State</div>
+                <div fxFlex="53" class="fieldbox">                  
+                    <mat-select appearance="outline">
+                        <mat-option>Kerala</mat-option>
+                    </mat-select>
+                </div>
+            </div>
+            <div fxLayout="row" class="margin">
+                <div  fxFlex="40" class="titletext">Loan Amount</div>
+                <div fxFlex="55" class="fieldbox">                  
+                    <mat-form-field  appearance="outline">                       
+                        <input matInput>
+                      </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row">
+                <div  fxFlex="40" class="titletext">Repayment Period (Months)</div>
+                <div fxFlex="20" class="fieldbox">                  
+                    <mat-select appearance="outline">
+                        <mat-option>24</mat-option>
+                    </mat-select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
