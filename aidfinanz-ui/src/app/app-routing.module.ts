@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoanregComponent } from './loanreg/loanreg.component';
+import { LoandetailsComponent } from './loandetails/loandetails.component';
 
-const routes: Routes = [
+const routes: Routes = [  
   {
     path:'',
-    redirectTo:'loanreg',
-    pathMatch:'full'
-  },
-  {
-    path:'loanreg',
-    component:LoanregComponent
+    component:LoandetailsComponent
   }
 ];
 

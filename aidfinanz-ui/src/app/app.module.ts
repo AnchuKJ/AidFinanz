@@ -3,10 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoanregComponent } from './loanreg/loanreg.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DocumentsComponent } from './documents/documents.component';
-import { ApplicantComponent } from './applicant/applicant.component';
 import { RiskassessmentComponent } from './riskassessment/riskassessment.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import { MatInputModule } from '@angular/material/input';
@@ -17,18 +14,24 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatIconModule} from '@angular/material/icon';
 import { AngularGradientProgressbarModule } from 'angular-gradient-progressbar';
+import { LoandetailsComponent } from './loandetails/loandetails.component';
+import { DocumentdetailsComponent } from './documentdetails/documentdetails.component';
+import { ApplicantdetailsComponent } from './applicantdetails/applicantdetails.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AidfinanzService } from './aidfinanz.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoanregComponent,
-    DocumentsComponent,
-    ApplicantComponent,
+    LoandetailsComponent,
+    DocumentdetailsComponent,
+    ApplicantdetailsComponent,
     RiskassessmentComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatStepperModule,
     MatInputModule,
@@ -41,7 +44,7 @@ import { AngularGradientProgressbarModule } from 'angular-gradient-progressbar';
     MatIconModule,
     AngularGradientProgressbarModule 
   ],
-  providers: [],
+  providers: [AidfinanzService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

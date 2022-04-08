@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-riskassessment',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RiskassessmentComponent implements OnInit {
 
+  @Input() riskdata:any;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ngAfterViewInit(): void{
+  
+  }
 }
